@@ -1,0 +1,321 @@
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------admin-navigation----------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+a.my_nav_tag {
+  display: inline-block;
+  color:#fff;
+  border: 1px solid #fff;
+  background-color: rgba(246, 119, 119, 0.7);
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.4em 0.6em!important;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+a.my_nav_tag:hover{
+  color:#F67777;
+  border: 1px solid #F67777;
+  background-color: #fff;
+}
+a.my_nav_tag_sm {
+  display: inline-block;
+  color:#fff;
+  border: 1px solid #fff;
+  background-color: rgba(246, 119, 119, 0.7);
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.4em 0.6em!important;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+a.my_nav_tag_sm:hover{
+  color:#F67777;
+  border: 1px solid #F67777;
+  background-color: #fff;
+}
+
+#navigationBar #right-nav a,
+#navigationBar #right-nav a:link,
+#navigationBar #right-nav a:hover,
+#navigationBar #right-nav a:visited
+{
+  background-color: rgba(246, 119, 119, 0.5);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------pagination(good)------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.g-cf:after {clear: both;content: "";display: table;}
+.g-cf {zoom:1;}
+/*分页*/
+.g-pager{ text-align:center; color: #111111; font: 12px/1.5em Arial,Tahoma;  float: right;}
+.g-pager a,.g-pager input{ cursor:pointer; border:solid 1px #0F71BE; padding:1px 4px; color:#0F71BE; margin:0 2px; vertical-align:middle; }
+.g-pager a.cur,.g-pager a:hover{ background-color:#0F71BE; color:#fff}
+.g-pager a.no{ border-color:#A3A3A3; color:#A3A3A3; background-color:#E4F2F9}
+.g-pager span{ margin-right:10px; }
+.g-pager input{ cursor:default; width:28px; padding:1px 2px; }
+.g-pagerwp{ height:23px; line-height:23px;padding:5px; margin-bottom:10px; border: 1px solid #DDDDDD;}
+.g-pagerwp .g-btn{ vertical-align:top}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------pagination--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*pagination的样式*/
+ul.pagination li.active {
+  background-color: rgba(246, 119, 119, 1) !important;
+}
+/*pagination*/
+.pagination li a,
+.pagination li span {
+  margin-left: 5px!important;
+  margin-right: 5px!important;
+  color: #fff!important;
+  border: 0px solid #F67777!important;
+  background-color: rgba(246, 119, 119, 0.7)!important;
+}
+.pagination li.active a,
+.pagination li.active span {
+  background-color: #F67777!important;
+  color: #fff!important;
+}
+.pagination li a:hover,
+.pagination li span:hover {
+  background-color: #F67777!important;
+  color: #fff!important;
+}
+.pagination li.active a:hover,
+.pagination li.active span:hover {
+  background-color: #F67777!important;
+  color: #fff!important;
+}
+.pagination li.disabled span {
+  background-color: rgba(246, 119, 119, 0.3)!important;
+  color: #fff!important;
+}
+.pagination li.disabled span:hover {
+  background-color: rgba(246, 119, 119, 0.3)!important;
+  color: #fff!important;
+}
+
+/*pager的样式*/
+.pager button {
+  outline: none!important;
+  color:#fff;
+  border: 1px solid #fff;
+  background-color: rgba(246, 119, 119, 1);
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.4em 0.6em!important;
+  margin-bottom: 1.2em!important;
+  border-radius: 5px;
+}
+.pager button:hover {
+  outline: rgba(246, 119, 119, 1);
+  background-color: rgba(246, 119, 119, 0.9);
+
+}
+.pager button:disabled {
+  outline: rgba(246, 119, 119, 1);
+  background-color: rgba(246, 119, 119, 0.7);
+  color:#fff;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------------a(button)--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+a.btn-list {
+  outline: none!important;
+  margin-bottom: 5px;
+}
+/*上面的按钮组样式*/
+a.btn-list.btn-nav {
+  margin-right: 5px;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------login----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+button.login-button {
+
+  outline: none!important;
+  color:#fff;
+  border: 1px solid #fff;
+  border-radius:6px;
+  background-color: rgba(246, 119, 119, 1);
+  font-size: 16px;
+  padding: 8px 0;
+  width: 100%;
+}
+button.login-button:hover {
+  outline: rgba(246, 119, 119, 0.9)!important;
+  background-color: rgba(246, 119, 119, 0.9)!important;
+
+}
+
+input.form-control:focus {
+  /*outline: none;*/
+  border-color: rgba(246, 119, 119, 0.7)!important;
+  box-shadow: 0 0 6px rgba(246, 119, 119, 0.7)!important;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------modal----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/*新增页面和修改页面*/
+.modal .modal-header .modal-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+/*新增页面和修改页面的modal框的取消和确认按钮*/
+.modal .modal-footer a.btn {
+  display: inline-block;
+  color:#fff;
+  border: 1px solid #fff;
+  background-color: rgba(246, 119, 119, 0.7);
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.4em 0.6em!important;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+.modal .modal-footer a.btn:hover{
+  background-color: rgba(246, 119, 119, 1);
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------index----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+#mainContent .admin-memo #memo-title {
+  padding: 6px 0 10px 0;
+}
+
+
+/*body #sidebar #side-menu > li {*/
+  /*min-width: 162px;*/
+  /*background-color: rgba(150, 150, 150, 0.1)!important;*/
+  /*margin-bottom: 10px!important;*/
+  /*color: #f65a9a;*/
+/*}*/
+/*body #sidebar #side-menu > li a {*/
+  /*color: #f65a9a;*/
+/*}*/
+
+/*body #sidebar li {*/
+  /*min-width: 162px;*/
+  /*background-color: rgba(246, 119, 119, 0.7)!important;*/
+  /*margin-bottom: 10px!important;*/
+/*}*/
+/*body #sidebar li a {*/
+  /*font-size: 16px;*/
+  /*color: #fff;*/
+/*}*/
+/*body #sidebar li a:hover,*/
+/*body #sidebar li a:active,*/
+/*body #sidebar li a:active.active {*/
+  /*background-color: rgba(246, 119, 119, 1)!important;*/
+/*}*/
+/*body #sidebar #side-menu li:active a:hover,*/
+/*body #sidebar #side-menu li:active a:active {*/
+  /*background-color: rgba(246, 119, 119, 1)!important;*/
+/*}*/
+/*body #sidebar #side-menu li a:hover,*/
+/*body #sidebar #side-menu li a:active {*/
+  /*color: #f65a9a;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox-custom {
+  position: relative;
+  padding: 0 15px 0 25px;
+  margin-bottom: 7px;
+  margin-top: 0;
+  display: inline-block;
+}
+/*
+将初始的checkbox的样式改变
+*/
+.checkbox-custom input[type="checkbox"] {
+  opacity: 0;/*将初始的checkbox隐藏起来*/
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  margin: -6px 0 0 0;
+  top: 50%;
+  left: 3px;
+}
+/*
+设计新的checkbox，位置
+*/
+.checkbox-custom label:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -9px;
+  width: 19px;
+  height: 18px;
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #bbb;
+  background: #fff;
+}
+/*
+点击初始的checkbox，将新的checkbox关联起来
+*/
+.checkbox-custom input[type="checkbox"]:checked +label:after {
+  position: absolute;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  content: "\e013";
+  top: 42%;
+  left: 3px;
+  margin-top: -5px;
+  font-size: 11px;
+  line-height: 1;
+  width: 16px;
+  height: 16px;
+  color: #333;
+}
+.checkbox-custom label {
+  cursor: pointer;
+  line-height: 1.2;
+  font-weight: normal;/*改变了rememberme的字体*/
+  margin-bottom: 0;
+  text-align: left;
+}
+

@@ -1,0 +1,129 @@
+/*@font-face {*/
+    /*font-family: 'Oxygen-Bold';*/
+    /*src:url(../fonts/Oxygen-Bold.ttf) format('truetype');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: 'Ubuntu-Regular';*/
+    /*src:url(../fonts/Ubuntu-Regular.ttf) format('truetype');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: 'Ubuntu-Bold';*/
+    /*src:url(../fonts/Ubuntu-Bold.ttf) format('truetype');*/
+/*}*/
+/*@font-face{*/
+	/*font-family:'Oxygen-Regular';*/
+	/*src:url(../fonts/Oxygen-Regular.ttf) format('truetype');*/
+/*}*/
+html,body{
+	/*background:#fff;*/
+	font-size: 100%;
+/*	font-family:'Oxygen-Regular';*/
+	 
+}
+body a{
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+ ul{
+	padding: 0;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6,label,p{
+	margin:0;	
+}
+/*--header--*/
+.head{
+	position:relative;
+}
+
+ul.nav_1 li a {
+    font-size: 0.9em;
+    color: #3A3A3A;
+	padding: 1.6em;
+}
+/*每个box右边的竖线*/
+ul.nav_1 li {
+    border-right:1px solid #EFEFEF;
+}
+.navbar {
+    margin-bottom: 0px;
+	border:none;
+	
+}
+nav.navbar.nav_bottom {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+div#bs-megadropdown-tabs {
+    padding: 0;
+}
+.h_menu4 {
+    margin-left: 13.6%;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #f67777;
+    color: #fff;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: #f67777;
+    color: #fff;
+}
+.col1 {
+    float: left;
+    width: 40%;
+}
+.col2 {
+    float: left;
+    width: 60%;
+}
+.menu-top {
+    width: 360px;
+	padding: 1em;
+}
+.col1 ul li,
+
+.col2 ul li{
+	list-style:none;
+	    border-right: none;
+}
+.col1 ul li a,
+.col2 ul li a{
+	padding: 6px 0px;
+    display: block;
+}
+.col1 h4,
+.col2 h4{
+	font-size: 1.5em;
+    color: #000;
+    margin-bottom: 0.5em;
+    /*font-family: 'Ubuntu-Regular';*/
+}
+
+/*--//header--*/
+
+
+
+/*--tags--*/
+/*.tag-in li{
+	display:inline-block;
+}*/
+.tag-in {
+	color:#B3B3B3;
+	font-size: 0.9em;
+    text-decoration: none;
+    padding: 0.3em 0.7em;
+    border: 1px solid #B3B3B3;
+    display: block;
+    margin-bottom: 0.6em;
+    border-radius: 15px;	
+}
+.tag-in:hover{
+	color:#F67777;
+    border: 1px solid #F67777;	
+}
+
+

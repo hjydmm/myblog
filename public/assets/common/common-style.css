@@ -1,0 +1,30 @@
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------login----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+button.login-button {
+
+  outline: none!important;
+  color:#fff;
+  border: 1px solid #fff;
+  border-radius:6px;
+  background-color: rgba(246, 119, 119, 1);
+  font-size: 16px;
+  padding: 8px 0;
+  width: 100%;
+}
+button.login-button:hover {
+  outline: rgba(246, 119, 119, 0.9)!important;
+  background-color: rgba(246, 119, 119, 0.9)!important;
+
+}
+
+input.form-control:focus {
+  /*outline: none;*/
+  border-color: rgba(246, 119, 119, 0.7)!important;
+  box-shadow: 0 0 6px rgba(246, 119, 119, 0.7)!important;
+}
+
+
+

@@ -1,0 +1,2107 @@
+/* ==== Google font ==== */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Html-Body------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/*设置全局属性*/
+/*rgba(246, 119, 119, 0.05)*/
+/*rgba(246, 229, 243, 0.32)*/
+body {font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体',
+'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN',
+'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+/*#fff7e1*/
+/*rgba(102, 102, 102, 0.072)*/
+color: #666;background-color: #fff7e1;font-size: 15px;line-height: 20px;font-weight: 400;}
+html, body {width:100%; padding:0; margin:0;}
+
+/*#fdf4f4*/
+
+/*firefox*/
+/*::-moz-selection{background:#fbc7c7;color:#000;text-shadow:none}*/
+/*::selection{background:#fbc7c7;color:#000;text-shadow:none}*/
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------global default effect--------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+a {
+    color: #000;
+}
+a:hover, a:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,label,p{
+    margin:0;
+}
+
+/*.category-btn.active{*/
+    /*background:rgba(100%,0%,70%,60);*/
+/*}*/
+/*.tag-btn.active{*/
+    /*background:rgba(100%,0%,70%,60);*/
+/*}*/
+
+/*tag的默认样式*/
+a.my_tag li{
+	display:inline-block;
+}
+a.my_tag {
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 1);
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 0.4em 0.6em!important;
+    margin-bottom: 1.2em!important;
+    border-radius: 5px;
+}
+a.my_tag:hover{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 1);
+}
+
+/*设置#F67777背景色时的框框样式*/
+a.my_tag_2 {
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 0.7);
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 0.4em 0.6em!important;
+    margin-bottom: 1.2em!important;
+    border-radius: 5px;
+}
+a.my_tag_2:hover{
+    color:#F67777;
+    border: 1px solid #F67777;
+    background-color: #fff;
+}
+
+ul.pagination li.active {
+    background-color: rgba(246, 119, 119, 1) !important;
+}
+
+/*pagination*/
+.pagination li a,
+.pagination li span {
+    margin-left: 5px!important;
+    margin-right: 5px!important;
+    color: #fff!important;
+    border: 0px solid #F67777!important;
+    background-color: rgba(246, 119, 119, 0.7)!important;
+}
+.pagination li.active a,
+.pagination li.active span {
+    background-color: #F67777!important;
+    color: #fff!important;
+}
+.pagination li a:hover,
+.pagination li span:hover {
+    background-color: #F67777!important;
+    color: #fff!important;
+}
+.pagination li.active a:hover,
+.pagination li.active span:hover {
+    background-color: #F67777!important;
+    color: #fff!important;
+}
+.pagination li.disabled span {
+    background-color: rgba(246, 119, 119, 0.3)!important;
+    color: #fff!important;
+}
+.pagination li.disabled span:hover {
+    background-color: rgba(246, 119, 119, 0.3)!important;
+    color: #fff!important;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------plugin---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*SimpleMDE的高度*/
+.CodeMirror {height: 1000px;}
+
+.mainText {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 16px 26px 20px 26px;
+}
+
+@media (max-width: 767px) {
+    .mainText {
+        padding: 15px;
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Carousel--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/* Carousel Styles */
+.carousel-inner img {width: 100%;max-height: 640px;}
+
+.carousel-control {width: 0;}
+.carousel-control.left,
+.carousel-control.right {opacity: 1;filter: alpha(opacity=100);background-image: none;background-repeat: no-repeat;text-shadow: none;}
+.carousel-control .fa-chevron-left,
+.carousel-control .fa-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {position: absolute;top: 45%;z-index: 5;display: inline-block;color: #fff;}
+.carousel-control .fa-chevron-left,
+.carousel-control .icon-prev {left: 10px;}
+.carousel-control .fa-chevron-right,
+.carousel-control .icon-next {right: 10px;}
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {opacity: .7;filter: alpha(opacity=70);}
+
+.carousel-indicators {border-color: rgba(100, 100, 100, 0)}
+.carousel-indicators .active {background-color: #fff;}
+.carousel-indicators {bottom: -2px;}
+
+.carousel-inner > .item {margin-left:0;margin-top:0;margin-bottom:0;padding-left: 0;width: 100%;height: auto;}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {display: block;max-width: 100%;height: auto;margin-left:0;padding-left: 0;}
+
+/* Carousel Header Styles */
+.header-text {position: absolute;top: 80%;left: 1.8%;right: auto;width: 96.66666666666666%;color: rgba(100, 100, 100, 0);}
+/*.header-text h2 {font-size: 40px;padding: 10px;color: #fff;text-transform: uppercase;background-color: #DA251D;display:inline-block;color:#fff;}*/
+.header-text h3 {background-color: rgba(246, 119, 119, 0);color: #000;}
+
+/* Owl-Theme */
+.owl-theme .owl-controls .owl-page span{background-color: #999;border: 1px solid #666;}
+.owl-theme .owl-controls .owl-page span:hover{background-color: #666;}
+
+#owl-demo-2 .item{margin: 1px;}
+#owl-demo-2 .item img{margin: 1px;}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------header---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*最上面的和最下面的线*/
+.header-line {
+    height: 2px;
+    width: 100%;
+    background: #F67777;
+}
+/*header区域的整体设计*/
+/*margin-bottom设置与下面的标题一栏的间隔*/
+#header {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+/*navbar的整体设计*/
+#header .navbar {
+  background: #fff;
+  border: 0;
+  margin-bottom: 10px;
+}
+/*navbar的左右padding值设计*/
+#header .navbar #bs-megadropdown-tabs{
+    padding: 0;
+}
+/*设置nav_bottom消除每个category框框底部和header底部的距离*/
+#header .navbar.nav_bottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*设置每个category框框的文字属性和padding值*/
+ul.my_nav li a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #3A3A3A;
+    padding: 16px;
+}
+/*每个category框框右边的竖线*/
+#navigation ul.my_nav > li > a {
+    border-right:1px solid #efe8e7;
+}
+/*category框框的hover和focus值*/
+/*#navigation .nav > li:first-child > a {*/
+    /*background-color: #f67777;*/
+    /*color: #fff;*/
+/*}*/
+/*category框框的hover和focus值*/
+#navigation .nav > li > a:hover,
+#navigation .nav > li > a:focus {
+    background-color: #f67777;
+    color: #fff;
+}
+/*category框框点击打开下拉菜单后的hover和focus值*/
+#navigation .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #f67777;
+    color: #fff;
+}
+/*打开的下拉菜单页的整体布局*/
+.menu-top {
+    width: 600px;
+    padding: 1em;
+}
+/*打开的下拉菜单页的每一列的布局*/
+.col1 {
+    float: left;
+    width: 50%;
+}
+.col2 {
+    float: left;
+    width: 50%;
+}
+/*.col3 {*/
+    /*float: left;*/
+    /*width: 40%;*/
+/*}*/
+.col1 h4,
+.col2 h4,
+.col3 h4{
+    font-size: 1.5em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+.col1 ul li,
+.col2 ul li,
+.col3 ul li{
+    list-style:none;
+    border-right: none;
+}
+.col1 ul li a,
+.col2 ul li a,
+.col3 ul li a{
+    padding: 6px 0;
+    display: block;
+}
+/*下拉菜单每个分类的样式,设置大小和下划线*/
+.col1 ul li a span,
+.col2 ul li a span,
+.col3 ul li a span{
+    border-bottom: 2px solid #ddd;
+    font-size: 15px;
+}
+.col1 ul li a.sub_category:hover,
+.col2 ul li a.sub_category:hover,
+.col3 ul li a.sub_category:hover{
+    text-decoration:none;
+}
+
+/* ------------------------------------------------------------------ */
+/* -----------------------homePage-left-content---------------------- */
+/* ------------------------------------------------------------------ */
+
+/*每一个文章条目的整体外层框架*/
+#content .left-content #articles .article-list-template {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+/*每一个文章条目的time和author*/
+#content .left-content #articles .article-list-template .article-time_author #article-time {
+    float: left;
+    margin-bottom: 10px;
+}
+#content .left-content #articles .article-list-template .article-time_author #article-author {
+    float: right;
+}
+/*每一个文章条目的title*/
+#content .left-content #articles .article-list-template .article-title {
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#content .left-content #articles .article-list-template .article-title a {
+    display: inline-block;
+    line-height: 30px;
+}
+/*每一个文章条目的pic和content*/
+#content .left-content #articles .article-list-template .article-pic_content .article-pic {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content #article-shortcut {
+    min-height: 96px;
+    border-bottom: 2px dotted #000;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-info-more {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-info {
+    margin: 0;
+    padding: 0;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-info #categories_tags {
+    /*float: left;*/
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-info #categories_tags .article-category {
+    margin-bottom: 10px;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-info #categories_tags .article-category .category-item {
+    /*margin-right: 8px;*/
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-info #categories_tags .article-tag {
+    margin-bottom: 10px;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-info #categories_tags .article-category .tag-item {
+    /*margin-right: 8px;*/
+    padding-left: 4px;!important;
+    padding-right: 4px;!important;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-more {
+    margin: 0;
+    padding: 0;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-more #see-more {
+    float: right;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-more #see-more a {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 6px 4px 16px;
+    border-radius: 2px;
+    background-color: #4962B3;
+    border: 3px solid #4962B3;
+    /*margin-top: 14px;*/
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-more #see-more a:hover {
+    color: #4962B3;
+    background-color: #fff;
+}
+#content .left-content #articles .article-list-template .article-pic_content .article-content .article-more #see-more a #between {
+    margin-right: 10px;
+}
+
+#content .left-content .no-article-list-template {
+    padding: 20px;
+    background-color: #fff;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*!*每一个文章条目的整体外层框架*!*/
+/*#content .left-content #articles .panel {*/
+    /*border: 0 solid rgba(255,255,255,0);*/
+    /*box-shadow: 0 0 0 rgba(255,255,255,0);*/
+    /*background-color: rgba(255,255,255,0);*/
+/*}*/
+/*!*每一个文章条目的整体内层框架*!*/
+/*#content .left-content #articles .panel .panel-body {*/
+    /*padding: 0;*/
+    /*border: 0;*/
+/*}*/
+/*!*每一个文章条目的整体内层左侧*!*/
+/*#content .left-content #articles .panel .panel-body .left {*/
+    /*text-align: center;*/
+    /*margin-top: 0;*/
+/*}*/
+/*!*每一个文章条目的整体内层左侧3条目的样式*!*/
+/*#content .left-content #articles .panel .panel-body .left .three_items {*/
+    /*display: block;*/
+    /*padding: 7px 20px 7px 20px;*/
+    /*margin: 0 0 6px 0;*/
+    /*color: #fff;*/
+/*}*/
+/*!*每一个文章条目的整体内层左侧2条目的样式*!*/
+/*#content .left-content #articles .panel .panel-body .left .two_items {*/
+    /*display: block;*/
+    /*padding: 11px 20px 11px 20px;*/
+    /*margin: 0 0 9px 0;*/
+    /*color: #fff;*/
+/*}*/
+/*!*每一个文章条目的整体内层右侧*!*/
+/*#content .left-content #articles .panel .panel-body .right {*/
+    /*!*float: left;*!*/
+    /*margin-top: 0;*/
+    /*background-color: #fff;*/
+    /*!*background-color: rgba(246, 119, 119, 0.05);*!*/
+    /*!*border: 2px solid rgba(246, 119, 119, 0.3);*!*/
+    /*!*border-radius: 4px;*!*/
+    /*border: 2px solid rgba(100, 100, 100, 0.1);*/
+    /*border-left: 6px solid #f67777;*/
+
+/*}*/
+/*!*每一个文章条目的整体内层右侧文章题目框架*!*/
+/*#content .left-content #articles .panel .panel-body .right #article_title {*/
+    /*font-size: 18px;*/
+    /*margin-top: 10px;*/
+/*}*/
+/*#content .left-content #articles .panel .panel-body .right #article_title a:hover {*/
+    /*color: #e8627e;*/
+/*}*/
+/*!*每一个文章条目的整体内层右侧文章的info信息*!*/
+/*#content .left-content #articles .panel .panel-body .right .article_info {*/
+    /*display: inline-block;*/
+    /*margin: 10px 13px 6px 0;*/
+    /*padding:3px 8px 3px 8px;*/
+    /*background-color: rgba(200,200,200,0.3);*/
+    /*border-radius: 3px;color: #000;*/
+/*}*/
+/*!*每一个文章条目的整体内层右侧文章的tag信息*!*/
+/*#content .left-content #articles .panel .panel-body .right #article_tag {*/
+    /*padding: 10px 0 10px 0;*/
+/*}*/
+/*#content .left-content #articles .panel .panel-body .right #article_tag span {*/
+    /*margin-right: 15px;*/
+    /*padding:6px 8px 6px 8px;*/
+    /*color:#F67777;*/
+    /*font-weight: bold;*/
+    /*background-color: rgba(200,200,200,0);*/
+    /*border: 2px solid #F67777;*/
+    /*border-radius: 5px;*/
+/*}*/
+/*#content .left-content #articles .panel .panel-body .right #article_tag a {*/
+    /*margin: 5px 5px 5px 0px;*/
+    /*padding:2px 5px 2px 5px;*/
+/*}*/
+
+/* ------------------------------------------------------------------ */
+/* -----------------------homePage-right-content--------------------- */
+/* ------------------------------------------------------------------ */
+
+/*#content .right-content {*/
+    /*background-color: #fff;*/
+    /*!*background-color: rgba(246, 119, 119, 0.05);*!*/
+    /*padding-top: 0;*/
+    /*margin-bottom: 0;*/
+/*}*/
+
+/*右边每一个widget的外部框架*/
+#content .right-content .widget {
+    background-color: #fff;
+    /*background-color: rgba(246, 119, 119, 0.05);*/
+    padding-top: 12px;
+    margin-bottom: 20px;
+    /*border: 2px solid rgba(0, 0, 0, 0.05);*/
+    /*border-top: 8px solid rgba(246, 119, 119, 0.9);*/
+    /*border-left: 2px solid rgba(246, 119, 119, 0.4);*/
+    /*border-right: 2px solid rgba(246, 119, 119, 0.4);*/
+    /*border-bottom: 2px solid rgba(246, 119, 119, 0.4);*/
+    /*border-radius: 4px;*/
+}
+/*右边每一个widget的内部框架*/
+#content .right-content .widget-part {
+	padding: 5px 15px 16px 15px;
+}
+/*各个widget的标题框设置*/
+#content .right-content .widget .heading{
+	margin: 10px 0 15px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #e7e7e7;
+}
+/*各个widget的标题的设置*/
+#content .right-content .widget .heading span{
+    font-size: 22px;
+    /*font-weight: 600;*/
+    color: rgb(21,5,80);
+	/*border-bottom: 3px solid rgba(232, 98, 142, 0.7);*/
+}
+
+/*关键词区域设置*/
+#content .right-content .widget .widget-categories #keyword {
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+/*关键词样式设置*/
+#content .right-content .widget .widget-categories #keyword a {
+    display:inline-block;
+    margin:0 8px 0 8px;
+    padding:18px 0 10px 0;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+}
+/*关键词设置*/
+#content .right-content .widget .widget-categories #keyword a.category_1 {
+    border-bottom:4px solid #d9be48;
+}
+#content .right-content .widget .widget-categories #keyword a.category_2 {
+    border-bottom:4px solid #d32e27;
+}
+#content .right-content .widget .widget-categories #keyword a.category_3 {
+    border-bottom:4px solid #8569a9;
+}
+#content .right-content .widget .widget-categories #keyword a.category_4 {
+    border-bottom:4px solid #5e89ae;
+}
+#content .right-content .widget .widget-categories #keyword a.category_5 {
+    border-bottom:4px solid #79cb96;
+}
+#content .right-content .widget .widget-categories #keyword a.category_6 {
+    border-bottom:4px solid #585AAE;
+}
+#content .right-content .widget .widget-categories #keyword a.category_7 {
+    border-bottom:4px solid #D97785;
+}
+/*关键词hover设置*/
+#content .right-content .widget .widget-categories #keyword a.category_1:hover {
+    color: #d9be48;
+}
+#content .right-content .widget .widget-categories #keyword a.category_2:hover {
+    color: #d32e27;
+}
+#content .right-content .widget .widget-categories #keyword a.category_3:hover {
+    color: #8569a9;
+}
+#content .right-content .widget .widget-categories #keyword a.category_4:hover {
+    color: #5e89ae;
+}
+#content .right-content .widget .widget-categories #keyword a.category_5:hover {
+    color: #79cb96;
+}
+#content .right-content .widget .widget-categories #keyword a.category_6:hover {
+    color: #585AAE;
+}
+#content .right-content .widget .widget-categories #keyword a.category_7:hover {
+    color: #D97785;
+}
+/*
+#e8627e
+#F67777
+*/
+
+
+/*widget-tags的设置*/
+#content .right-content .widget .widget-tags .tags-area a {
+    /*color: #fff;*/
+    /*border: 1px solid #fff;*/
+    /*border-radius: 4px;*/
+    /*background-color: rgba(246, 119, 119, 1);*/
+
+    /*padding: 2px 9px;*/
+    /*margin: 2px;*/
+    /*line-height: 2;*/
+    /*font-size: 16px;*/
+    display: inline-block;
+    color: rgba(40, 40, 40, 1);
+    border: 1px solid rgba(21, 5, 80, 0.3);
+    /*border: 2px solid rgba(102, 102, 102, 0.05);*/
+    border-radius: 4px;
+    /*background-color: rgba(102, 102, 102, 0.06);*/
+    /*font-weight: bold;*/
+
+    padding: 1px 6px;
+    margin: 4px 3px;
+    line-height: 2;
+    font-size: 14px;
+
+}
+/*widget-tags的hover设置*/
+#content .right-content .widget .widget-tags a:hover {
+    /*color: rgba(246, 119, 119, 1);*/
+    /*border: 1px solid rgba(246, 119, 119, 1);*/
+    /*border-radius: 4px;*/
+    /*background-color: #fff;*/
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(214, 173, 255, 0.3);
+    background-color: rgba(21, 5, 80, 0.1);
+}
+
+/*search的样式*/
+#content .container .widget .widget-search .search-area input:focus {
+    /*outline: none;*/
+    border-color: rgba(246, 119, 119, 0.7);
+    box-shadow: 0 0 4px rgba(246, 119, 119, 0.7);
+}
+#content .container .widget .widget-search .search-area input:visited {
+    /*outline: none;*/
+    border-color: rgba(246, 119, 119, 0.7);
+    box-shadow: 0 0 4px rgba(246, 119, 119, 0.7);
+    background-color: #fff;
+}
+
+
+
+/*widget-ranking右边的more设置*/
+#content .right-content .widget .widget-ranking .heading a { 
+	float:right;
+}
+/*初始态*/
+#content .right-content .widget .widget-ranking li a{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
+    color: rgba(246, 119, 119, 1);
+    background-color: #fff;
+    border: 1px solid rgba(246, 119, 119, 1);
+}
+/*初始态的选中态,初始态的hover态，选中态的hover态*/
+#content .right-content .widget .widget-ranking li.active a,
+#content .right-content .widget .widget-ranking li a:hover,
+#content .right-content .widget .widget-ranking li.active a:hover
+{
+    color: #fff;
+    background-color: rgba(246, 119, 119, 1);
+}
+
+
+/*widget-ranking的每一个条目的设置*/
+#content .right-content .widget .widget-ranking .content-part {
+	margin-top: 0;
+	margin-bottom: 10px; 
+	border-bottom: 1px solid #ddd;
+}
+/*清除col-md和col-sm带来的margin和padding值*/
+#content .right-content .widget .widget-ranking .content-part .left-picture {
+	margin-left: 0;
+	padding-left: 0;
+}
+/*widget-ranking的图片样式设置*/
+#content .right-content .widget .widget-ranking .content-part .left-picture #user_pic {
+    float:left;
+    margin:0 10px 5px 0;
+    width:50px;!important;
+    height:50px;!important;
+}
+/*widget-ranking的右边的内容整体设置*/
+#content .right-content .widget .widget-ranking .content-part .right-content {
+	margin-top:-5px;
+	padding: 0 0 5px 10px;
+}
+/*widget-ranking的右边的内容的文章标题设置*/
+#content .right-content .widget .widget-ranking .content-part .right-content .article_item_info {
+    margin-top: 3px;
+}
+/*widget-ranking的右边的内容的文章标题设置*/
+#content .right-content .widget .widget-ranking .content-part .right-content .article_item_info span {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 7px;
+    padding-top: 0;
+    margin-right: 13px;
+}
+/*链接部分*/
+#content .right-content .widget .widget-link .link-item {
+	/*border-bottom: 1px solid #ddd;*/
+	padding: 8px 0 12px 0;
+	font-size: 17px;
+	color: #000 !important;
+    text-decoration: underline;
+}
+/*#content .right-content .widget .widget-link .link-item:last-child {*/
+	/*border-bottom: none; */
+/*}*/
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Footer--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+footer{background-color: #202020;margin-top: 20px;color: #ddd;padding: 20px 0 10px;}
+footer .wrap-footer{border-bottom: 1px solid #444;padding-bottom: 20px;}
+footer .copy-right{text-align: center;padding-top: 20px;}
+footer .footer-heading h4{color: #fff;font-size: 20px;}
+footer .content{}
+footer .col-footer{}
+footer .footer-1{}
+footer .footer-1 img{max-width: 140px;margin-bottom: 10px;}
+footer .footer-1 p{border-bottom: 1px solid #444;margin-bottom: 10px;padding-bottom: 7px;}
+footer .footer-1 input[type="text"]{ 
+	border: 2px solid #E7E7E7;
+	outline: medium none;
+    color: #999999;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 1.2;
+    margin: 10px 0;
+    padding: 5px 10px 0;
+    width: 100%;
+	background-color: transparent;
+    border: 2px solid #444444;
+}
+
+footer .footer-2{}
+footer .footer-2 a{color: #999; border: 1px solid #999; padding: 1px 10px;line-height: 2.2;font-size: 14px;text-transform: capitalize;}
+footer .footer-2 a:hover{color: #7DC314;}
+
+footer .footer-3{}
+footer .footer-3 ul {padding: 0;}
+footer .footer-3 ul li {list-style: none;margin-bottom: 15px; border-bottom: 1px solid #444;padding-bottom: 10px;}
+footer .footer-3 ul li:last-child{border-bottom: none;}
+footer .footer-3 ul li a{color: #999;}
+footer .footer-3 ul li a:hover{color: #666;}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Contact-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.contact h2{font-size: 34px; font-weight: 500;letter-spacing: 3px;padding-top: 20px ;text-align: center;}
+
+#contact_form {padding:25px;}
+
+#ff label {cursor:pointer;margin:px 0;display:block;font-weight:bold;}
+#ff input {display:block;width:100%;color:#000;padding:10px;margin: 5px 0 25px 0;}
+#ff textarea {display:block;width:100%;height:200px;background-color:#fff; color:#000;padding:10px;margin: 5px 0 25px 0;}
+
+#ff .sendButton {border: none;cursor:pointer;background-color: #FD0005;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;;width:100px;color:#ffffff;}
+#ff .sendButton:hover {background-color: #000;}
+
+.message{text-align: center;}
+.message .wrap{	padding: 50px; background: #ffffff; border: 1px solid #333333;display: inline-block;border-radius: 5px;	-webkit-border-radius: 5px; -moz-border-radius: 5px;-khtml-border-radius: 5px;}
+.message .text{font-size: 35px;	margin-bottom: 30px;}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Owl-Theme-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/*.owl-theme .owl-controls .owl-page span{background-color: #999;border: 1px solid #666;}*/
+/*.owl-theme .owl-controls .owl-page span:hover{background-color: #666;}*/
+
+/*#owl-demo-2 .item{margin: 1px;}*/
+/*#owl-demo-2 .item img{margin: 1px;}*/
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------------Button------------------------------------ */
+/* ---------------------------------------------------------------------------- */
+/*.btn-facebook, .btn-twitter, .btn-pinterest, .btn-google, .btn-mail{color: #fff;}*/
+/*.btn-facebook:hover, .btn-twitter:hover, .btn-pinterest:hover, .btn-google:hover, .btn-mail:hover{background-color: #000; color: #fff;}*/
+/*.btn-facebook{background-color: #3B5998;}*/
+/*.btn-twitter{background-color: #00ACED;}*/
+/*.btn-pinterest{background-color: #CA212A;}*/
+/*.btn-google{background-color: #EB4026;}*/
+/*.btn-mail{background-color: #666666;}*/
+
+/*.btn-2{padding: 3px 8px;}*/
+
+/*.btn-3{background-color: #444444;color: #FADA1A;font-weight: bold;}*/
+/*.btn-3:hover{background-color: #fff;color: #000;}*/
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------UserProfile@left-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*userAccount页面的整体样式*/
+#content .container .left-content .user-widget.user-account {
+    background-color: rgba(246, 119, 119, 0.05);
+    border-radius:10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 2px solid rgba(246, 119, 119, 0.9);
+}
+/*userAccount页面的侧边信息部分*/
+#content .container .left-content .user-widget.user-account .edit-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#content .container .left-content .user-widget.user-account .edit-content .info-edit {
+    margin: 10px 15px 20px 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+    text-align: center;
+    font-size: 18px;
+}
+#content .container .left-content .user-widget.user-account .edit-content .info-edit a:hover {
+    color: rgba(246, 119, 119, 1);
+    /*font-size: 20px;*/
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------UserProfile@right-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*UserProfile页面的背景整体样式*/
+#content .container .right-content .user-widget.profile-item {
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    /*min-height: 100px;*/
+    border-top: 5px solid #d32e27;
+    border-radius: 0;
+}
+
+/*UserProfile页面内层整体样式*/
+#content .container .right-content .user-widget.profile-item .inner-frame {
+    padding: 50px 50px;
+
+}
+/*UserProfile页面标题样式*/
+#content .container .right-content .user-widget.profile-item h3{
+    color: #000;
+    /*border-bottom: 1px solid #ddd;*/
+    padding-bottom: 10px;
+}
+
+/*UserProfile页面标签字样式*/
+#content .container .right-content .user-widget.profile-item .profile-info .info-part label{
+    font-size: 16px;
+    margin-right: 20px;
+}
+/*UserProfile页面内容样式*/
+#content .container .right-content .user-widget.profile-item .profile-info .info-part span{
+    font-size: 20px;
+}
+
+/*UserProfileEdit页面标签字样式*/
+#content .container .right-content .user-widget.profile-item .form-group label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/*UserProfileEdit页面内容样式*/
+#content .container .right-content .user-widget.profile-item .form-group input{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+button.profileEdit-button {
+
+    outline: none!important;
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius:6px;
+    background-color: rgba(246, 119, 119, 1);
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+}
+button.profileEdit-button:hover {
+    outline: rgba(246, 119, 119, 0.9)!important;
+    background-color: rgba(246, 119, 119, 0.9)!important;
+
+}
+
+#content .container .right-content .user-widget.profile-item .form-group select.form-control:focus,
+#content .container .right-content .user-widget.profile-item .form-group input.form-control:focus {
+    /*outline: none;*/
+    border-color: rgba(246, 119, 119, 0.7)!important;
+    box-shadow: 0 0 6px rgba(246, 119, 119, 0.7)!important;
+}
+
+
+
+
+
+
+
+
+/*#content .container .right-content .pager button {*/
+    /*outline: none!important;*/
+    /*color:#fff;*/
+    /*border: 1px solid #fff;*/
+    /*background-color: rgba(246, 119, 119, 1);*/
+    /*font-size: 0.9em;*/
+    /*text-decoration: none;*/
+    /*padding: 0.4em 0.6em!important;*/
+    /*margin-bottom: 1.2em!important;*/
+    /*border-radius: 5px;*/
+/*}*/
+/*#content .container .right-content .pager button:hover {*/
+    /*outline: rgba(246, 119, 119, 1);*/
+    /*background-color: rgba(246, 119, 119, 0.9);*/
+    /*color:#d32e27;*/
+/*}*/
+/*#content .container .right-content .pager button:disabled {*/
+    /*outline: rgba(246, 119, 119, 1);*/
+    /*background-color: rgba(246, 119, 119, 0.7);*/
+    /*color:#fff;*/
+/*}*/
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------UserPage@left--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+#content .container .left-content  {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#content .container .left-content .user-page {
+    background-color: #fff;
+}
+
+#content .container .left-content .user-widget.user-description {
+    padding: 15px 0 5px 15px;
+    /*border-bottom: 1px dotted #000;*/
+}
+#content .container .left-content .user-widget.user-description .description {
+    font-size: 18px;
+}
+/*user页面的个人信息部分*/
+#content .container .left-content .user-widget.user-avatar-name {
+    /*margin-top: 10px;*/
+    margin-bottom: 0;
+}
+/*user页面的个人信息部分之avatar和姓名部分*/
+#content .container .left-content .user-widget.user-avatar-name .member-info {
+    min-height: 120px;
+    margin: 0 15px 0 15px;
+    /*border-bottom: 1px solid #ddd;  */
+}
+/*user页面的个人信息部分之avatar部分*/
+#content .container .left-content .user-widget.user-avatar-name .member-info .left-avatar {
+    padding-left: 10px;
+    padding-top: 18px;
+}
+
+#content .container .left-content .user-widget.user-avatar-name .member-info .left-avatar .thumbnail {
+    float:left;
+    margin-bottom:0;
+    width:80px;
+    height:80px;
+    border: 6px solid rgba(66, 61, 55, 0.3);
+    /*border-bottom: 8px solid rgba(66, 61, 55, 0.5);*/
+    /*border-bottom: 6px solid rgba(246, 119, 119, 0.9);*/
+}
+
+/*user页面的用户名*/
+#content .container .left-content .user-widget.user-avatar-name .member-info .right-username {
+    text-align: center;
+    vertical-align: center;
+    padding:36px 0 10px 0;
+    font-size: 26px;
+    color: #000;
+    border-bottom: 6px solid rgba(66, 61, 55, 0.3);
+}
+
+/*user页面的个人信息部分*/
+#content .container .left-content .user-widget.user-info-items {
+    /*background-color: rgba(239, 232, 231, 0.16);*/
+    /*border-radius:10px;*/
+    margin-top: 0;
+    margin-bottom: 25px;
+    /*border-top: 6px solid rgba(246, 119, 119, 0.6);*/
+    /*border-bottom: 2px solid rgba(246, 119, 119, 0.3);*/
+  /*border: 2px solid rgba(246, 119, 119, 0.9);*/
+}
+
+
+/*user页面的个人信息部分之是否follow部分*/
+#content .container .left-content .user-widget.user-info-items .notFollow {
+  display: block;
+  /*border: 4px solid rgba(255,200,200,0.8);*/
+  padding:6px 1px 6px 1px;
+  border-radius:3px;
+  margin:5px 20px 5px 20px;
+  font-size: 16px;
+  color:#fff;
+  text-align: center;
+  background-color: rgba(246, 119, 119, 0.9);
+}
+#content .container .left-content .user-widget.user-info-items .notFollow:hover {
+  background-color: rgba(246, 119, 119, 0.6);
+}
+#content .container .left-content .user-widget.user-info-items .Follow {
+  display: block;
+  /*border: 4px solid rgba(255,200,200,0.8);*/
+  padding:6px 1px 6px 1px;
+  border-radius:3px;
+  margin:5px 20px 5px 20px;
+  font-size: 16px;
+  color:#fff;
+  text-align: center;
+  background-color: rgba(246, 119, 119, 0.6);
+}
+/*user页面的个人信息部分之自我介绍部分*/
+#content .container .left-content .user-widget.user-info-items .self-introduction {
+  font-size: 16px;
+  margin: 0 15px 15px 15px;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+/*user页面的个人信息部分之行为部分*/
+#content .container .left-content .user-widget.user-info-items .user_info {
+  margin:0 16px 10px 16px;
+  padding:0 0 0 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+#content .container .left-content .user-widget.user-info-items .user_info #article_number,
+#content .container .left-content .user-widget.user-info-items .user_info #liked,
+#content .container .left-content .user-widget.user-info-items .user_info #stored,
+#content .container .left-content .user-widget.user-info-items .user_info #attended {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  /*background-color: #fff0d3;*/
+}
+#content .container .left-content .user-widget.user-info-items .user_info #article_number {
+    font-size: 18px;
+    padding: 5px 5px;
+    margin: 4px 4px;
+    color: rgba(246, 119, 119, 0.9);
+}
+#content .container .left-content .user-widget.user-info-items .user_info #liked {
+    font-size: 18px;
+    padding: 5px 5px;
+    margin: 4px 4px;
+    color: rgba(246, 119, 119, 0.9);
+}
+#content .container .left-content .user-widget.user-info-items .user_info #stored {
+    padding: 5px 5px;
+    margin: 4px 4px;
+    /*color: rgba(246, 119, 119, 0.9);*/
+}
+#content .container .left-content .user-widget.user-info-items .user_info #attended {
+    padding: 5px 5px;
+    margin: 4px 4px;
+    /*color: rgba(246, 119, 119, 0.9);*/
+}
+
+/*user页面的个人信息部分之登录写文章部分*/
+#content .container .left-content .user-widget.user-info-items #write-article {
+    display: block;
+    /*border: 4px solid rgba(255,200,200,0.8);*/
+    padding:10px 2px 10px 2px;
+    border-radius:6px;
+    /*border: solid 2px rgba(255,200,200,0.8);*/
+    margin:5px 20px 15px 20px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    background-color: rgba(246, 119, 119, 0.9);
+}
+#content .container .left-content .user-widget.user-info-items #write-article:hover {
+    background-color: rgba(246, 119, 119, 0.6);
+}
+
+/*user页面的个人信息部分之行为部分*/
+#content .container .left-content .user-widget.user-info-items .action-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#content .container .left-content .user-widget.user-info-items .action-content .action {
+  margin: 10px 15px 20px 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+  text-align: center;
+  font-size: 18px;
+}
+#content .container .left-content .user-widget.user-info-items .action-content .action a:hover {
+  color: rgba(246, 119, 119, 1);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------------series-page--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+#content .container .left-content  {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#content .container .left-content .series-page {
+    background-color: #fff;
+    margin-bottom: 6px;
+}
+
+#content .container .left-content .series-widget.series-description {
+    padding: 15px 20px 5px 15px;
+    /*border-bottom: 1px dotted #000;*/
+}
+#content .container .left-content .series-widget.series-description .description {
+    font-size: 18px;
+}
+
+
+/*user页面文章列表的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part {
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+/*user页面文章列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .passArticle_item,
+#content .container .right-content .user-widget.full-frame .tab_part .auditArticle_item,
+#content .container .right-content .user-widget.full-frame .tab_part .draftArticle_item {
+    list-style-type:none;
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 3px;
+}
+/*user页面文章列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .sub_title {
+    display: inline-block;
+    color: rgba(255,255,255,1);
+    padding:5px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+#content .container .right-content .user-widget.full-frame .tab_part .article_title {
+    display: inline-block;
+    margin-top: 5px;
+}
+/*user页面文章列表的右边附加info的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .article_info {
+    float: right;
+    margin-top: 10px;
+}
+/*user页面文章列表的每一单元的右边附加info的样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .like_number,
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .store_number,
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .comment_number {
+    margin: 10px 13px 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .created_at {
+    margin: 10px 0 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------------rankings-page--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+#content .container .left-content  {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#content .container .left-content .rankings-page {
+    background-color: #fff;
+    margin-bottom: 6px;
+}
+
+#content .container .left-content .rankings-widget.rankings-description {
+    padding: 15px 20px 5px 15px;
+    /*border-bottom: 1px dotted #000;*/
+}
+#content .container .left-content .rankings-widget.rankings-description .description {
+    font-size: 18px;
+}
+
+
+/*user页面文章列表的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part {
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+/*user页面文章列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .passArticle_item,
+#content .container .right-content .user-widget.full-frame .tab_part .auditArticle_item,
+#content .container .right-content .user-widget.full-frame .tab_part .draftArticle_item {
+    list-style-type:none;
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 3px;
+}
+/*user页面文章列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .sub_title {
+    display: inline-block;
+    color: rgba(255,255,255,1);
+    padding:5px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+#content .container .right-content .user-widget.full-frame .tab_part .article_title {
+    display: inline-block;
+    margin-top: 5px;
+}
+/*user页面文章列表的右边附加info的整体样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .article_info {
+    float: right;
+    margin-top: 10px;
+}
+/*user页面文章列表的每一单元的右边附加info的样式*/
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .like_number,
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .store_number,
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .comment_number {
+    margin: 10px 13px 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+#content .container .right-content .user-widget.full-frame .tab_part .article_info .created_at {
+    margin: 10px 0 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------UserPage@top(nav-list_common)------------------------ */
+/* ---------------------------------------------------------------------------- */
+
+/*user页面的导航条背景样式*/
+#user-header.nav-list {
+    /*border-top: 1px solid rgba(246, 119, 119, 0.2);*/
+    /*background-color: rgba(246, 119, 119, 0.08);*/
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+/*user页面的导航条背景样式*/
+#user-header.nav-list .container {
+    min-height: 40px;
+}
+/*user页面的文字样式*/
+#user-header.nav-list .container #nav_list_item {
+    color: #000;
+    margin: 12px 0 0 0;
+}
+/*user页面的nav-list的hover样式*/
+#user-header.nav-list .container #nav_list_item #returnHome:hover,
+#user-header.nav-list .container #nav_list_item #userPage:hover,
+#user-header.nav-list .container #nav_list_item #sharePage:hover,
+#user-header.nav-list .container #nav_list_item #statePage:hover {
+    color: rgba(246, 119, 119, 1);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------UserPage@right(pager_common)----------------------- */
+/* ---------------------------------------------------------------------------- */
+
+#content .container .right-content .pager button {
+    outline: none!important;
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 1);
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 10px!important;
+    margin-bottom: 20px!important;
+    border-radius: 5px;
+}
+#content .container .right-content .pager button:hover {
+    outline: rgba(246, 119, 119, 1);
+    background-color: rgba(246, 119, 119, 0.9);
+    /*color:#d32e27;*/
+}
+#content .container .right-content .pager button:disabled {
+    outline: rgba(246, 119, 119, 1);
+    background-color: rgba(246, 119, 119, 0.7);
+    color:#fff;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------UserPage@right(index)----------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*user页面最新文章和评论的背景整体样式*/
+#content .container .right-content .user-widget.up-frame,
+#content .container .right-content .user-widget.down-frame {
+    background: #fff;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    /*min-height: 100px;*/
+    border-top: 3px solid #d32e27;
+    border-radius: 0;
+    padding: 15px;
+}
+/*user页面最新文章的整体样式*/
+#content .container .right-content .user-widget .recent-release {
+  margin: 10px 15px 46px 15px;
+ 
+}
+/*user页面最新文章的标题样式*/
+#content .container .right-content .user-widget .recent-release h3{
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+/*user页面最新文章的每一单元的文章样式*/
+#content .container .right-content .user-widget .recent-release .passArticle_item {
+    list-style-type:none;
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
+}
+#content .container .right-content .user-widget .recent-release .passArticle_item .sub_title {
+    color: rgba(255,255,255,1);
+    padding:5px;
+    border-radius: 4px;
+}
+/*user页面最新文章的每一单元的右边附加info的样式*/
+#content .container .right-content .user-widget .recent-release .passArticle_item .passArticle_info .like_number,
+#content .container .right-content .user-widget .recent-release .passArticle_item .passArticle_info .store_number,
+#content .container .right-content .user-widget .recent-release .passArticle_item .passArticle_info .comment_number {
+    margin: 10px 13px 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+#content .container .right-content .user-widget .recent-release .passArticle_item .passArticle_info .created_at {
+    margin: 10px 0px 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+/*user页面最新文章的浏览更多的样式*/
+#content .container .right-content .user-widget .recent-release .seeMore {
+    float:right;
+    margin: 5px 0 5px 0;
+}
+/*user页面最新评论的背景整体部分修改样式*/
+#content .container .right-content .user-widget.down-frame {
+    border-top: 5px solid #F67777;
+}
+/*user页面最新评论的整体样式*/
+#content .container .right-content .user-widget .recent-comment {
+    margin: 10px 15px 46px 15px;
+}
+/*user页面最新评论的标题样式*/
+#content .container .right-content .user-widget .recent-comment h3{
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+/*user页面最新评论的每一单元的样式*/
+#content .container .right-content .user-widget .recent-comment .comment_item {
+    list-style-type:none;
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
+}
+/*user页面最新评论的每个回复内容的样式*/
+#content .container .right-content .user-widget .recent-comment .comment_item #reply_part {
+    margin: 5px 0 5px 10px;
+}
+#content .container .right-content .user-widget .recent-comment .comment_item #reply_part .reply_to {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+/*user页面最新评论的每个回复内容的样式*/
+#content .container .right-content .user-widget .recent-comment .comment_item #reply_part .comment_content {
+    margin-top: 5px;
+}
+/*user页面最新评论的浏览更多的样式*/
+#content .container .right-content .user-widget .recent-comment .seeMore {
+    float:right;
+    margin: 5px 0 5px 0;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------UserPage@right(article_list)------------------------ */
+/* ---------------------------------------------------------------------------- */
+
+/*user页面文章列表的背景整体样式*/
+#content .container .right-content .user-widget.full-frame {
+     background: #fff;
+     margin-top: 0;
+     margin-bottom: 25px;
+     border: 1px solid #ddd;
+     border-top: 3px solid #d32e27;
+     border-radius: 0;
+ }
+#content .container .right-content .user-widget.full-frame .panel-body {
+    padding: 20px 26px 20px 26px;
+}
+/*user页面文章列表的整体样式*/
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part {
+    list-style-type:none;
+    margin-left: 0;
+    padding-left: 0;
+}
+/*user页面文章列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .passArticle_item,
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .auditArticle_item,
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .draftArticle_item {
+    list-style-type:none;
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 3px;
+}
+/*user页面文章列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .sub_title {
+    display: inline-block;
+    color: rgba(255,255,255,1);
+    padding:5px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .article_title {
+    display: inline-block;
+    margin-top: 5px;
+}
+/*user页面文章列表的右边附加info的整体样式*/
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .article_info {
+    float: right;
+    margin-top: 10px;
+}
+/*user页面文章列表的每一单元的右边附加info的样式*/
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .article_info .like_number,
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .article_info .store_number,
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .article_info .comment_number {
+    margin: 10px 13px 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+#content .container .right-content .user-widget.full-frame .panel-body .tab-content .tab_part .article_info .created_at {
+    margin: 10px 0 6px 0;
+    padding:3px 8px 3px 8px;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 3px;
+    color: #000;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------UserPage@right(comment_list)------------------------ */
+/* ---------------------------------------------------------------------------- */
+
+/*user页面评论列表的背景整体样式*/
+#content .container .right-content .user-widget.full-frame_comment {
+    background: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #d32e27;
+    border-radius: 0;
+    padding:15px;
+}
+/*user页面评论列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame_comment .comment_item {
+    border-bottom: 1px solid #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
+    list-style-type:none;
+}
+/*user页面评论列表的每一个单元的回复和内容整体样式*/
+#content .container .right-content .user-widget.full-frame_comment .comment_item .reply_and_content {
+    margin-left: 22px;
+    margin-top: 6px;
+}
+/*user页面评论列表的每一个单元的回复内容样式*/
+#content .container .right-content .user-widget.full-frame_comment .comment_item .reply_and_content .comment_main_content {
+    margin: 10px 20px 6px 0;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------UserPage@right(follow_list)------------------------ */
+/* ---------------------------------------------------------------------------- */
+
+/*user页面关注列表的背景整体样式*/
+#content .container .right-content .user-widget.full-frame_attend {
+    background: #fff;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #d32e27;
+    border-radius: 0;
+    padding:15px;
+}
+/*user页面关注列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame_attend .attend_item {
+    list-style:none;
+    border-bottom: solid 2px #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
+}
+/*user页面关注列表的left-avatar的样式*/
+#content .container .right-content .user-widget.full-frame_attend .attend_item .left-avatar .thumbnail {
+    float:left;
+    margin-bottom:0;
+    width:50px;
+    height:50px;
+    border: 2px solid rgba(246, 119, 119, 0.6);
+}
+/*user页面关注列表的右边user信息的样式*/
+#content .container .right-content .user-widget.full-frame_attend .attend_item .right-name {
+    min-height:50px;
+    padding-top: 10px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------UserPage@right(like_list)------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*user页面like列表的背景整体样式*/
+#content .container .right-content .user-widget.full-frame_like {
+    background: #fff;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #d32e27;
+    border-radius: 0;
+    padding:15px;
+}
+/*user页面like列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame_like .like_item {
+    list-style:none;
+    border-bottom: solid 2px #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
+}
+/*user页面like列表的sub-title的样式*/
+#content .container .right-content .user-widget.full-frame_like .like_item .sub_title {
+    color: rgba(255,255,255,1);
+    padding:5px;
+    border-radius: 4px;
+}
+/*user页面like列表的作者的样式*/
+#content .container .right-content .user-widget.full-frame_like #author_name {
+    font-size: 18px;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------UserPage@right(collection_list)--------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*user页面store列表的背景整体样式*/
+#content .container .right-content .user-widget.full-frame_store {
+    background: #fff;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-top: 3px solid #d32e27;
+    border-radius: 0;
+    padding:15px;
+}
+/*user页面store列表的每一个单元的整体样式*/
+#content .container .right-content .user-widget.full-frame_store .store_item {
+    list-style:none;
+    border-bottom: solid 2px #ddd;
+    margin: 5px 0 5px 0;
+    padding: 8px 0 8px 0;
+}
+/*user页面store列表的sub-title的样式*/
+#content .container .right-content .user-widget.full-frame_store .store_item .sub_title {
+    color: rgba(255,255,255,1);
+    padding:5px;
+    border-radius: 4px;
+}
+/*user页面store列表的作者的样式*/
+#content .container .right-content .user-widget.full-frame_store #author_name {
+    font-size: 18px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------articleWritePage------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------- */
+/* --------------------------------draftPage----------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*articleWrite页面左侧整体的样式*/
+#content .container .articleEdit_main .left-content .articleEdit_part {
+    padding-right: 16px;
+}
+/*articleWrite页面左侧每一个panel的样式*/
+#content .container .articleEdit_main .left-content .articleEdit_part .panel {
+    /*border: 3px solid rgba(246, 119, 119, 0.7);*/
+}
+/*articleWrite页面左侧每一个panel头部的样式*/
+#content .container .articleEdit_main .left-content .articleEdit_part .panel-heading {
+    background-color: rgba(246, 119, 119, 1);
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: 3px solid rgba(246, 119, 119, 1);
+}
+/*articleWrite页面左侧标题的样式*/
+#content .container .articleEdit_main .left-content input:focus {
+    /*outline: none;*/
+    border-color: rgba(246, 119, 119, 0.7);
+    box-shadow: 0 0 10px rgba(246, 119, 119, 0.7);
+}
+
+/*css_style选择的选项样式*/
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style a.edit_tag {
+    display: inline-block;
+    color:#000;
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    background-color: #fff;
+    text-decoration: none;
+    margin: 0 16px 0 0;
+    padding: 5px 8px 7px 8px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style a.edit_tag:hover{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 0.5);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style a.edit_tag.active{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 1);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-1 {
+    background-color: rgba(246, 125, 0, 0.5);
+    color: #fff;
+    border: 1px solid rgba(246, 125, 0, 0.5);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-1:hover {
+    background-color: rgba(246, 125, 0, 0.8);
+    color: #fff;
+    border: 1px solid rgba(246, 125, 0, 0.8);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-1.active {
+    background-color: rgba(246, 125, 0, 1);
+    color: #fff;
+    border: 1px solid rgba(246, 125, 0, 1);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-2 {
+    background-color: rgba(8, 127, 110, 0.5);
+    color: #fff;
+    border: 1px solid rgba(8, 127, 110, 0.5);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-2:hover {
+    background-color: rgba(8, 127, 110, 0.9);
+    color: #fff;
+    border: 1px solid rgba(8, 127, 110, 0.8);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-2.active {
+    background-color: rgba(8, 127, 110, 1);
+    color: #fff;
+    border: 1px solid rgba(8, 127, 110, 1);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-3 {
+    background-color: rgba(10, 0, 255, 0.5);
+    color: #fff;
+    border: 1px solid rgba(10, 0, 255, 0.5);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-3:hover {
+    background-color: rgba(10, 0, 255, 0.8);
+    color: #fff;
+    border: 1px solid rgba(10, 0, 255, 0.8);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-3.active {
+    background-color: rgba(10, 0, 255, 1);
+    color: #fff;
+    border: 1px solid rgba(10, 0, 255, 1);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-4 {
+    background-color: rgba(66, 0, 153, 0.5);
+    color: #fff;
+    border: 1px solid rgba(66, 0, 153, 0.5);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-4:hover {
+    background-color: rgba(66, 0, 153, 0.8);
+    color: #fff;
+    border: 1px solid rgba(66, 0, 153, 0.8);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #layout_style #style-4.active {
+    background-color: rgba(66, 0, 153, 1);
+    color: #fff;
+    border: 1px solid rgba(66, 0, 153, 1);
+}
+
+
+/*分类选择样式*/
+/*初始态*/
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category li a{
+    padding: 5px;
+    margin: 5px;
+    color: rgba(246, 119, 119, 1);
+    background-color: #fff;
+    border: 1px solid rgba(246, 119, 119, 1);
+}
+/*初始态的选中态,初始态的hover态，选中态的hover态*/
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category li.active a,
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category li a:hover,
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category li.active a:hover
+{
+    color: #fff;
+    background-color: rgba(246, 119, 119, 1);
+}
+/*分类选择下的选项样式*/
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category a.edit_tag {
+    color:#000;
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    background-color: #fff;
+    text-decoration: none;
+    /*padding: 0.4em 0.6em!important;*/
+    margin-left: 5px;
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category a.edit_tag_big {
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category a.edit_tag_small {
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category a.edit_tag:hover{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 0.5);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_category a.edit_tag.active{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 1);
+}
+/*标签选择的选项样式*/
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_tag a.edit_tag {
+    display: inline-block;
+    color:#000;
+    border: 1px solid rgba(100, 100, 100, 0.5);
+    background-color: #fff;
+    text-decoration: none;
+    margin: 5px 5px 5px 0;
+    padding: 4px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_tag a.edit_tag:hover{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 0.5);
+}
+#content .container .articleEdit_main .left-content .articleEdit_part .panel #edit_tag a.edit_tag.active{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 1);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------articleWrite(button)---------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*写文章页面一时保存和提交按钮的样式*/
+#content .container .articleEdit_main .right-content .button_group .save_btn {
+    display: inline-block;
+    float: left;
+    color:#fff;
+    border: 1px solid rgba(246, 160, 38, 1);
+    background-color: rgba(246, 160, 38, 1);
+    text-decoration: none;
+    margin: 5px 5px 5px 0;
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#content .container .articleEdit_main .right-content .button_group .save_btn:hover {
+    color:#fff;
+    border: 1px solid rgba(246, 160, 38, 1);
+    background-color: rgba(246, 160, 38, 0.7);
+}
+#content .container .articleEdit_main .right-content .button_group .summit_btn {
+    display: inline-block;
+    float: right;
+    color:#fff;
+    border: 1px solid rgba(246, 119, 119, 1);
+    background-color: rgba(246, 119, 119, 1);
+    text-decoration: none;
+    margin: 5px 0 5px 0;
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#content .container .articleEdit_main .right-content .button_group .summit_btn:hover {
+    color:#fff;
+    border: 1px solid rgba(246, 119, 119, 1);
+    background-color: rgba(246, 119, 119, 0.7);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------auditPage------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------detailPage------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+#content .container .right-content  {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*detail页面文章的背景整体样式*/
+#content .container .right-content .user-widget.detail-page {
+    background: #fff;
+    margin-bottom: 0;
+    /*border: 1px solid #ddd;*/
+    /*min-height: 100px;*/
+    /*border-top: 10px solid #d32e27;*/
+    border-radius: 0;
+}
+/*detail页面文章的上面detail-date-title信息的整体样式*/
+#content .container .right-content .user-widget.detail-page .detail-info-title {
+    padding: 3px 0 5px 0;
+    margin: 0 0 5px 0;
+}
+#content .container .right-content .user-widget.detail-page .detail-info-title .detail-info .calendar-item {
+    display:inline-block;
+    font-size: 16px;
+    margin: 10px 8px 0 0;
+    padding:3px 0 3px 26px;
+    float: left;
+}
+
+/*detail页面文章的上面info信息的样式*/
+/*#content .container .right-content .user-widget.detail-page .detail-info-part {*/
+    /*padding: 20px 26px 20px 26px;*/
+/*}*/
+
+/*detail页面文章的上面info信息的点赞等样式*/
+#content .container .right-content .user-widget.detail-page .detail-info-title .detail-info .info-group {
+    float: right;
+    margin: 10px 8px 0 0;
+    padding:3px 26px 3px 0;
+}
+#content .container .right-content .user-widget.detail-page .detail-info-title .detail-info .info-group .detail-item {
+    display:inline-block;
+    margin-left: 15px;
+}
+
+#content .container .right-content .user-widget.detail-page .detail-info-title .detail-title {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 20px 26px 20px 26px;
+    font-size: 30px;
+    color: #000;
+    /*#d32e27*/
+}
+
+/*detail页面文章的上面info信息的分类和标签的整体样式*/
+#content .container .right-content .user-widget.detail-page  .detail-categories-tags {
+    padding: 10px 26px 10px 18px;
+    border-bottom: 3px dotted rgba(246, 119, 119, 1);
+}
+
+
+/*detail页面文章的上面info信息的标签的样式*/
+#content .container .right-content .user-widget.detail-page  .detail-categories-tags a.detail-tag {
+    display:inline-block;
+    margin: 2px 8px 0 0;
+    padding:3px 8px 3px 8px;
+    /*background-color: rgba(246, 119, 119, 0.2);*/
+    border-radius: 3px;
+    color: #000;
+}
+#content .container .right-content .user-widget.detail-page  .detail-categories-tags a.detail-tag:hover {
+    color:#fff;
+    /*border: 1px solid #fff;*/
+    background-color: rgba(246, 119, 119, 0.7);
+}
+
+/*文章后面的last-info背景整体样式*/
+#content .container .right-content .user-widget.last-info {
+    /*background-color: #ffd298;*/
+    background-color: #fff;
+    border-top: 3px dotted rgba(246, 119, 119, 1);
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+/*文章后面的last-info的点赞和收藏样式*/
+#content .container .right-content .user-widget.last-info .detail-info-part .click-tag {
+    color:rgba(246, 119, 119, 1);
+    border: 1px solid rgba(246, 119, 119, 1);
+    background-color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 0.4em 0.6em!important;
+    /*margin-bottom: 1.2em!important;*/
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+}
+#content .container .right-content .user-widget.last-info .detail-info-part {
+    padding: 10px 0 10px 26px;
+}
+#content .container .right-content .user-widget.last-info .detail-info-part #last-info-description {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 16px;
+    color: #000;
+}
+#content .container .right-content .user-widget.last-info .detail-info-part #like_item {
+    min-width: 100px!important;
+}
+#content .container .right-content .user-widget.last-info .detail-info-part #store_item {
+    min-width: 140px!important;
+}
+
+#content .container .right-content .user-widget.last-info .detail-info-part .click-tag:hover {
+    color:rgba(246, 119, 119, 1);
+    border: 1px solid rgba(246, 119, 119, 1);
+    background-color: rgba(246, 119, 119, 0.1);
+    font-size: 0.9em;
+    text-decoration: none;
+    padding: 0.4em 0.6em!important;
+    /*margin-bottom: 1.2em!important;*/
+    border-radius: 5px;
+}
+#content .container .right-content .user-widget.last-info .detail-info-part .item-clicked,
+#content .container .right-content .user-widget.last-info .detail-info-part .item-clicked:hover{
+    color:#fff;
+    border: 1px solid #fff;
+    background-color: rgba(246, 119, 119, 1);
+}
+
+#content .container .right-content .user-widget.last-info .detail-info-part .comment-tag.click-tag {
+    color:#fff;
+    border: 1px solid #fff;
+    margin-left: 20px;
+    background-color: rgba(246, 119, 119, 1);
+}
+#content .container .right-content .user-widget.last-info .detail-info-part .comment-tag.click-tag:hover {
+    background-color: rgba(246, 119, 119, 0.7);
+}
+
+
+
+/*detail页面文章的comment的样式*/
+#content .container .right-content .user-widget.detail-comment {
+    border-bottom: 5px solid #F67777;
+    margin-bottom: 16px;
+}
+/*detail页面文章的comment的标题样式*/
+#content .container .right-content .user-widget.detail-comment #comment_title {
+    margin-top: 26px;
+    margin-bottom: 10px;
+    padding: 5px 0 5px 10px;
+    font-size: 28px;
+    color: #000;
+}
+/*detail页面文章的comment输入框样式*/
+#content .container .right-content .user-widget.input_area .panel-body {
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+/*detail页面文章的comment输入框提示的样式*/
+#content .container .right-content .user-widget.input_area .panel-body .alert {
+    color:#fff;
+    background-color: rgba(246, 119, 119, 1);
+    margin-bottom: 0;
+    border: 0 solid #fff;
+    border-radius: 3px 3px 0 0;
+}
+
+#content .container .right-content .user-widget.input_area .comment-btn {
+    display: inline-block;
+    float: right;
+    color:#fff;
+    border: 1px solid rgba(246, 119, 119, 1);
+    background-color: rgba(246, 119, 119, 1);
+    text-decoration: none;
+    margin: 5px 0 5px 0;
+    padding: 10px 15px 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+#content .container .right-content .user-widget.input_area .comment-btn:hover {
+    color:#fff;
+    border: 1px solid rgba(246, 119, 119, 1);
+    background-color: rgba(246, 119, 119, 0.9);
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------UserPage-action-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*!*发布的文章*!*/
+/*.container .right-content .user-widget .article-share {*/
+  /*margin: 10px 15px 30px 15px; */
+/*}*/
+
+/*.container .right-content .user-widget .article-share h3{*/
+  /*color: #000;*/
+  /*border-bottom: 1px solid #ddd;*/
+  /*padding-bottom: 10px;*/
+/*}*/
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------UserEditPage--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/*.container .left-content .user-widget .edit-content {*/
+  /*padding-top: 30px;*/
+  /*padding-bottom: 20px;*/
+/*}*/
+
+/*.container .left-content .user-widget .edit-content .info-edit {*/
+  /*margin: 10px 15px 30px 15px;*/
+  /*padding-bottom: 20px;*/
+  /*border-bottom: 1px solid #ddd;  */
+  /*text-align: center;*/
+  /*font-size: 18px;*/
+/*}*/
+/*!*设置内边距防止表单内容溢出*!*/
+/*.container .right-content .user-widget .body {*/
+  /*padding:45px;*/
+
+/*}*/
+
+/*.container .right-content .user-widget .body #form {*/
+  /*margin:10px !important;*/
+/*}*/
+
+/*.container .right-content .user-widget .body h3 {*/
+  /*color: #000;*/
+  /*font-size: 34px;*/
+/*}*/
+
+/*.container .right-content .user-widget .body .form-group label {*/
+  /*font-size: 18px;*/
+/*}*/
+
+/*.container .right-content .user-widget .body .form-group button {*/
+/*}*/
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------UserAvatarEdit-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.container .right-content .user-widget .body #upload-form {
+  height: 500px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------UserPasswordEdit------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------UserPasswordEdit------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------UserArticleEdit-------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
